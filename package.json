@@ -6,8 +6,10 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
-    "update-zac": "npm install @zyda.design/zac-tailwindcss@latest"
+    "build": "postcss css/tailwind.css -o zyda-website/styles/vendors/tailwind.css",
+    "update-zac": "npm install @zyda.design/zac-tailwindcss@latest",
+    "hs-fetch": "npx hs fetch --account=25026258 /zyda-website",
+    "hs-upload": "npx hs filemanager upload --account=25026258 ./zyda-website /zyda-website"
   },
   "repository": {
     "type": "git",
