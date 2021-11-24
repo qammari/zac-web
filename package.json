@@ -1,0 +1,31 @@
+{
+  "name": "zac-web",
+  "version": "0.0.1",
+  "description": "ZAC Web",
+  "author": "Zyda",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "update-zac": "npm install @zyda.design/zac-tailwindcss@latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qammari/zac-web.git"
+  },
+  "dependencies": {
+    "@hubspot/cli": "^3.0.9",
+    "@zyda.design/zac-tailwindcss": "^0.0.15",
+    "postcss-cli": "^9.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.19"
+  },
+  "bugs": {
+    "url": "https://github.com/qammari/zac-web/issues"
+  },
+  "homepage": "https://github.com/qammari/zac-web#readme"
+}
