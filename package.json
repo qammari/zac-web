@@ -6,10 +6,13 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
+    "node-env-dev": "export NODE_ENV=development",
+    "node-env-pd": "export NODE_ENV=production",
     "build": "postcss css/tailwind.css -o zyda-website/styles/vendors/tailwind.css",
     "update-zac": "npm install @zyda.design/zac-tailwindcss@latest",
     "hs-fetch": "npx hs fetch --account=25026258 /zyda-website",
-    "hs-upload": "npx hs filemanager upload --account=25026258 ./zyda-website /zyda-website"
+    "hs-upload": "npx hs upload --account=25026258 ./zyda-website /zyda-website",
+    "hs-upload-publish": "npx hs upload --account=25026258 ./zyda-website /zyda-website --mode=publish"
   },
   "repository": {
     "type": "git",

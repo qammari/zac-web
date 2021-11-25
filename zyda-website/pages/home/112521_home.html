@@ -1,0 +1,39 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html class="h-full">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    <!-- Head -->
+    {% module "module_163784052262110" path="/zyda-website/modules/local/general/zd-mdl__head", label="zd-mdl__head" no_wrapper=true %}
+    {{ standard_header_includes }}
+  </head>
+  <body class="h-full">
+    <div class="bg-white min-h-full px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
+      <div class="max-w-max mx-auto">
+        <main class="sm:flex">
+          <p class="text-96 font-semibold text-accent-primary sm:text-20">404</p>
+          <div class="sm:ml-6">
+            <div class="sm:border-l sm:border-positive-quaternary sm:pl-6">
+              <h1 class="text-96 font-semibold text-positive-primary tracking-0 sm:text-20">Page not found</h1>
+              <p class="mt-8 text-16 text-positive-tertiary">Please check the URL in the address bar and try again.</p>
+            </div>
+            <div class="mt-10 flex space-x-6 sm:border-l sm:border-transparent sm:pl-6">
+              <a href="#" class="inline-flex items-center px-16 py-8 border border-transparent text-16 font-medium rounded-6 text-white bg-accent-primary hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-opacity-30">
+                Go back home
+              </a>
+              <a href="#" class="inline-flex items-center px-16 py-8 border border-transparent text-16 font-medium rounded-6 text-accent-primary bg-accent-opacity-10 hover:bg-accent-opacity-30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-opacity-30">
+                Contact support
+              </a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    {{ standard_footer_includes }}
+  </body>
+</html>

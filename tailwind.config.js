@@ -5,7 +5,12 @@ const darkTokens = require('@zyda.design/zac-tailwindcss/tokens/dark.json');
 const typographyDefaultTokens = require('@zyda.design/zac-tailwindcss/tokens/typography-default.json');
 
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  purge: [
+    './zyda-website/**/*.css',
+    './zyda-website/**/*.js',
+    './zyda-website/**/*.html',
+    './zyda-website/**/*.json',
+  ],
   darkMode: 'class',
   theme: {
     colors: {
