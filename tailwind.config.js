@@ -5,12 +5,15 @@ const darkTokens = require('@zyda.design/zac-tailwindcss/tokens/dark.json');
 const typographyDefaultTokens = require('@zyda.design/zac-tailwindcss/tokens/typography-default.json');
 
 module.exports = {
-  purge: [
-    './zyda-website/**/*.css',
-    './zyda-website/**/*.js',
-    './zyda-website/**/*.html',
-    './zyda-website/**/*.json',
-  ],
+  purge: {
+    enabled: true,
+    content: [
+      './zyda-website/**/*.css',
+      './zyda-website/**/*.js',
+      './zyda-website/**/*.html',
+      './zyda-website/**/*.json',
+    ],
+  },
   darkMode: 'class',
   theme: {
     colors: {
@@ -190,7 +193,7 @@ module.exports = {
       fontWeightsKeys.forEach((fontWeight) => {
         return (obj[
           `${fontWeight}`
-        ] = `${jsonFontWeights[fontWeight].value}px`);
+        ] = `${jsonFontWeights[fontWeight].value}`);
       });
 
       return obj;

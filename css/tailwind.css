@@ -1,3 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Typography */
+
+.heading-120 {
+  @apply font-sans text-120 font-semibold leading-128 tracking-t128;
+}
+
+.heading-96 {
+  @apply font-sans text-96 font-semibold leading-104 tracking-t104;
+}
+
+.heading-72 {
+  @apply font-sans text-72 font-semibold leading-80 tracking-t080;
+}
+
+.heading-56 {
+  @apply font-sans text-56 font-semibold leading-64 tracking-t064;
+}
+
+.heading-40 {
+  @apply font-sans text-40 font-semibold leading-48 tracking-t048;
+}
+
+.heading-32 {
+  @apply font-sans text-32 font-semibold leading-40 tracking-t024;
+}
+
+.heading-24 {
+  @apply font-sans text-24 font-semibold leading-32 tracking-t016;
+}
+
+.heading-20 {
+  @apply font-sans text-20 font-semibold leading-28 tracking-t008;
+}
+
+.heading-16 {
+  @apply font-sans text-16 font-semibold leading-24 tracking-0;
+}
+
+.heading-14 {
+  @apply font-sans text-14 font-semibold leading-20 tracking-w008;
+}
+
+.heading-12 {
+  @apply font-sans text-12 font-semibold leading-16 tracking-w016;
+}
+
+.body-24 {
+  @apply font-sans text-24 font-regular leading-32 tracking-t016;
+}
+
+.body-20 {
+  @apply font-sans text-20 font-regular leading-28 tracking-t008;
+}
+
+.body-16 {
+  @apply font-sans text-16 font-regular leading-24 tracking-0;
+}
+
+.body-14 {
+  @apply font-sans text-14 font-regular leading-20 tracking-w008;
+}
+
+.body-12 {
+  @apply font-sans text-12 font-regular leading-16 tracking-w016;
+}
+
+.element-16 {
+  @apply font-sans text-16 font-medium leading-24 tracking-0;
+}
